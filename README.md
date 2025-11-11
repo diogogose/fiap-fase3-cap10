@@ -31,6 +31,12 @@ Os dados incluem leituras de:
 - **Status da Bomba** (ligada/desligada)
 - **Timestamp** de cada leitura
 
+### ⚠️ Observação Técnica Importante
+Devido a limitações na importação dos dados para o Oracle Database, os valores numéricos foram importados como **inteiros** ao invés de decimais. Por esse motivo, **todas as consultas SQL dividem os valores por 100** para obter os valores reais:
+- `UMIDADE_SOLO / 100` → converte para percentual correto
+- `TEMPERATURA / 100` → converte para graus Celsius corretos
+- `PH / 100` → converte para escala de pH correta
+
 ---
 
 ## 📸 Visualizações do Projeto
