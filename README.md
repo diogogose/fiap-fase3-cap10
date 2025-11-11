@@ -135,37 +135,11 @@ Os dados incluem leituras de:
 
 ---
 
-## 🔧 Como Executar
-
-### Pré-requisitos
-- Oracle Database (versão utilizada com suporte a TRUNC)
-- Cliente SQL (SQL Developer, DBeaver, etc.)
-
-### Passo a Passo
-
-1. **Criar a estrutura do banco de dados:**
-```sql
--- Execute o arquivo database/analises_sensores.sql
-```
-
-2. **Carregar os dados:**
-```sql
--- Importe o arquivo database/dados_sensores.csv
-```
-
-3. **Executar as consultas:**
-```sql
--- Execute cada arquivo de consulta (consulta1.sql até consulta5.sql)
-```
-
----
-
 ## 📁 Estrutura de Pastas
 
 ```
 Cap1/
 ├── database/
-│   ├── analises_sensores.sql    # Script de criação da estrutura
 │   ├── dados_sensores.csv       # Dados coletados dos sensores
 │   ├── consulta1.sql            # Análise geral
 │   ├── consulta2.sql            # Análise de temperatura
